@@ -1,2 +1,1 @@
-# massif
- 
+Um site de cadastros de fichas de pacientes para uso do curso de Massoterapia do IFPR. Esse é um projeto de conclusão de curso de Informática realizado com mais dois colegas. Feito com PHP utilizando o framework Laravel, além do CSS e do JS para estilização das páginas e do MySql para conexão com banco de dados.
