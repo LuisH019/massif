@@ -1,0 +1,301 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: rgb(255, 255, 255);
+
+}
+
+.fichaPaciente {
+  margin-top: 600px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  
+  width: 1000px;
+  background: #14770b;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+
+  
+
+
+}
+
+
+
+
+
+input {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #14770b;
+  box-shadow: 3px 3px #000000;
+  cursor: pointer;
+  font-size: medium;
+  background: #ffffff;
+  height: 30px;
+  border-radius: 25px;
+  padding: 0 30px 0 20px;
+  outline: none;
+  border: none;
+  width: 350px;
+}
+
+
+
+
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #46a83d;
+}
+
+input:-moz-placeholder {
+  color: #46a83d;
+}
+
+input::-moz-placeholder {
+  color: #46a83d;
+}
+
+input:-ms-input-placeholder {
+  color: #46a83d;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #46a83d;
+}
+
+textarea:-moz-placeholder {
+  color: #46a83d;
+}
+
+textarea::-moz-placeholder {
+  color: #46a83d;
+}
+
+textarea:-ms-input-placeholder {
+  color: #46a83d;
+}
+
+span, label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: center;
+
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.form-titulo{
+  font-size: 40px;
+}
+.subtitulo{
+  font-size: 30px;
+}
+label{
+  font-size: 25px;
+}
+
+.registrar {
+  text-align: center;
+}
+
+.registrar-btn {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #14770b;
+
+  box-shadow: 3px 3px #000000;
+  width: 50%;
+  height: 40px;
+  border-radius: 25px;
+  background: #ffffff;
+  outline: none !important;
+  border: none;
+
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.registrar-btn:hover {
+  background: #14770b;
+  color: #ffffff
+}
+
+
+
+body {
+  background-color: #14770b;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  width:250px;
+  float:right;
+  margin-left:5px
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px #000000;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 0 10px 0 10px;
+  line-height: 1;
+  height: 30px;
+  cursor: pointer;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #14770b transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #14770b transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  background-color: white;
+  color: #14770b;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+  user-select: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 100%;
+
+  box-shadow: 3px 3px #000000;
+
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #14770b;
+  color: white;
+
+
+}
+
+.left, .right{
+  width: fit-content;
+}
+
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+
+.error{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:medium;
+  color: rgb(226, 109, 109);
+}

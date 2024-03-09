@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+body {
+
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+
+
+}
+
+
+.header {
+
+    height: 85;
+    width: 100%;
+    background-color: #14770b;
+}
+
+.header ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+
+}
+
+.header ul li a {
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#massif_branco {
+    margin-top: 20;
+
+}
+
+.massif-logo {
+    position: absolute;
+    display: block;
+    margin-top: -4;
+    width: 200px;
+}
+
+.formulario-login {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #14770b;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    font-size: xx-large;
+    box-shadow: 5px 7px 5px rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 5px;
+    border-color: #14770b;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+}
+
+input[type=submit] {
+
+    background-color: #14770b;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+    font-size: large;
+    box-shadow: 1px 3px 1px rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #14770b;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.ifprLogo {
+
+    max-width: 175px;
+    max-height: 175px;
+
+}
+
+.footer {
+    background-color: #14770b;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    height: 15vh;
+    width: 100%;
+
+
+}
+
+ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+    ul {
+        grid-auto-flow: column;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+
+
+.fichaPaciente {
+
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ffffff;
+
+}
+
+.box {
+
+    width: 960px;
+    background: #14770b;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 130px 33px 95px;
+
+}
+
+@keyframes wave-animation {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+}
